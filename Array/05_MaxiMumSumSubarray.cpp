@@ -12,6 +12,7 @@ int maxSum(vector<int> arr) {
         currentSum = max(arr[i], currentSum + arr[i]);
         maxSum = max(maxSum, currentSum);
     }
+    return maxSum;
 }
 
 int main() {
